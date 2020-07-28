@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#94c8e5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.wonderkiln.camerakit.CameraView
+        android:visibility="visible"
+        android:layout_weight="0.6"
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:adjustViewBounds="true" />
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitCenter"
+        android:id="@+id/preview"
+        android:visibility="gone"
+        android:layout_weight="0.6"
+        android:adjustViewBounds="true"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp" />
+
+    <RelativeLayout
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_weight="0.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_camera"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_recapture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_refresh"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnlink"
+            android:background="#d2ecfa"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
+            android:onClick="link"
+            android:text="link" />
+
+        <TextView
+            android:layout_below="@id/btn_recapture"
+            android:visibility="visible"
+            android:textSize="18sp"
+            tools:text="[[439] beaker (40.0%), [968] espresso (33.7%)]"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:clickable="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

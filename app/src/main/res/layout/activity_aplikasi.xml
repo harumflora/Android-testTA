@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Aplikasi">
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="236dp"
+        android:layout_height="173dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_marginTop="180dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lin1"
+        android:orientation="vertical"
+        android:layout_below="@id/logo">
+
+        <ImageButton
+            android:id="@+id/btnscan"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/scan" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lin1"
+        android:layout_marginTop="68dp">
+
+        <ImageButton
+            android:id="@+id/btnpetunjuk"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/petunjuk" />
+
+        <ImageButton
+            android:id="@+id/btninfo"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/info" />
+
+        <ImageButton
+            android:id="@+id/btnkeluar"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/keluar" />
+    </LinearLayout>
+</RelativeLayout>
